@@ -1,0 +1,82 @@
+body {
+  font-family: sans-serif;
+}
+
+.calculator {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: repeat(4, 40px);
+  grid-template-rows: minmax(120px, auto) repeat(5, 40px);
+  gap: 4px;
+  max-width: max-content;
+  background-color: black;
+  border: 3px solid rgb(229, 255, 0);
+  border-radius: 20px;
+  margin: 100px;
+  padding: 10px;
+}
+
+.result {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 20px 10px 20px 0;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.first-line {
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+}
+
+.second-line {
+  font-size: 25px;
+  font-weight: 600;
+  color: white;
+}
+
+button {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  border: 1px solid rgb(53, 53, 53);
+  border-radius: 50px;
+}
+
+button:hover {
+  background-color: rgb(112, 112, 112);
+  transition: background-color 0.4s;
+}
+
+.col-two {
+  grid-column: span 2;
+}
+
+.op-col-one {
+  background-color: rgb(212, 212, 212);
+  color: black;
+  transition: background-color 0.5s;
+}
+
+.op-col-one:hover {
+  background-color: rgb(245, 245, 245);
+}
+
+.op-col-two {
+  background-color: orange;
+}
+
+.op-col-two:hover {
+  background-color: white;
+  color: orange;
+  transition: background-color 0.5s;
+}
+
+.op-col-three {
+  background-color: rgb(27, 27, 27);
+}

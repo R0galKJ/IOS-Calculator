@@ -6,6 +6,7 @@ const deleteRes = document.querySelector(".delete");
 const equalRes = document.querySelector(".equal");
 const secondResult = document.querySelector(".first-line");
 const mainResult = document.querySelector(".second-line");
+const plusMinus = document.querySelector(".plus-minus");
 
 let currResult = "";
 let prevResult = "";
@@ -78,12 +79,25 @@ const deleteResult = function () {
   }
 };
 
+const addPlusMinus = function () {
+  if (currResult) {
+    currResult = -currResult;
+  } else if (currResult < 0) {
+    currResult;
+  }
+};
+
 const addNumber = function (number) {
   currResult = currResult.toString() + number.toString();
   if (currResult.includes(".")) {
     return;
   }
 };
+
+plusMinus.addEventListener("click", function () {
+  addPlusMinus();
+  result();
+});
 
 numbers.forEach((number) => {
   number.addEventListener("click", function () {

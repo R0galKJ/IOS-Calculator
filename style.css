@@ -10,7 +10,7 @@ body {
   grid-template-rows: minmax(120px, auto) repeat(5, 40px);
   gap: 4px;
   max-width: max-content;
-  background-color: black;
+  background-color: rgb(10, 10, 10);
   border: 3px solid rgb(229, 255, 0);
   border-radius: 20px;
   margin: 100px;
@@ -42,10 +42,11 @@ body {
 
 button {
   cursor: pointer;
-  background-color: black;
   color: white;
   border: 1px solid rgb(53, 53, 53);
   border-radius: 50px;
+  font-weight: 700;
+  font-size: 15px;
 }
 
 button:hover {
